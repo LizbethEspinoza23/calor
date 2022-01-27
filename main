@@ -1,0 +1,15 @@
+clc 
+
+% Ejemplo 1 
+
+a1=0;
+a2=0;
+f=@(x) 4*x-4*x.^2;
+U=ecuacioncalor(f, a1, a2, 1, 2, 1, 3, 11, 1, 2)
+
+% Ejemplo 2
+
+a1=1.5;
+a2=3.5;
+f=@(x) x.^3-5*x;
+U=ecuacioncalor(f, a1, a2, 3, 0.30, 1, 4, 11, 3, 4)
